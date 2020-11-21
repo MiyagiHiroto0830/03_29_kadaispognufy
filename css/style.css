@@ -1,0 +1,123 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+.logo-box{
+    text-align: center;
+    padding: 15% 0px 15% 0px;   
+}
+
+
+.btn-box{
+    text-align: center;
+}
+
+.button{
+    margin-top: 60px;
+    border-radius: 20px;
+    background-color: #2ebd59;
+}
+.btn-box .button{
+    transition: all 300ms linear;
+
+}
+.btn-box .button:hover{
+    color:#f00;
+    background-color: #fff;
+    border: 1px solid #f00;
+}
+/* spognufy2 */
+.music-box1{
+    display: flex;
+    justify-content:space-around;
+    margin-top: 30px;
+}
+.music-minibox1{
+    display: flex;
+    flex-direction: column;
+}
+.music-minibox2{
+    display: flex;
+    flex-direction: column;
+}
+.music-minibox3{
+    display: flex;
+    flex-direction: column;
+}
+.music-box2{
+    display: flex;
+    justify-content:space-around;
+    margin-top: 30px;
+}
+.music-minibox4{
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+}
+.music-minibox5{
+    display: flex;
+    flex-direction: column;
+}
+.music-minibox6{
+    display: flex;
+    flex-direction: column;
+}
+.playbutton{
+    margin-left: 75px;
+    margin-top: 0px;
+}
+
+/* ここからmusicminibox */
+.main{
+    width: 40%;
+    margin: 45px auto 0 auto;
+    color: white; 
+    background-color: teal;
+}
+.img-box{
+    text-align: center;
+}
+.imgimg{
+    margin-top: 15px;
+}
+.text1{
+    font-size: 40px;
+    margin:0;
+}
+.text2{
+    margin: 0;
+    font-size: 18px;
+}
+.btn-logo-box{
+    display: flex;
+    justify-content: center;
+}
+
+.llick{
+    font-size: 25px;
+}
+ul li.remove span {
+    color: #F00;
+    
+}
+
+li {
+    list-style: none;
+    text-align: right;
+    margin-right: 20px;
+}
+span{
+    font-size: 30px;
+}
+.btn-box2{
+    text-align: center;
+
+}
+.backbutton{
+    font-size: 20px;
+    background-color: yellow;
+}
+

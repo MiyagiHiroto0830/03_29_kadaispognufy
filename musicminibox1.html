@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>sanmonsyousetu</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/responsive.css">
+</head>
+
+<body>
+    <audio id="sound1" preload="auto">
+        <source src="img/y2mate.com - King Gnu - 三文小説.mp3" type="audio/wav">
+    </audio>
+    <div class="main">
+        <div class="img-box">
+            <img class="imgimg" src="img/sanmonsyousetu.jpg" width="95%" height="auto">
+        </div>
+        <p class="text1">三文小説</p>
+        <p class="text2">King Gnu</p>
+        <ul>
+            <li no="1" class="add" onclick="addfav('1')"><span>♡</span></li>
+            <li no="1" class="remove" onclick="removefav('1')"><span>♥</span></li>
+        </ul>
+        <div class="btn-logo-box">
+            <img id="start_btn1" src="img/start_btn.png" width="23%" height="auto">
+            <img id="pause_btn1" src="img/stop_btn.png" width="23%" height="auto">
+        </div>
+
+        <p class="llick">この世界の誰もが
+            君を忘れ去っても<br>
+            随分老けたねって<br>
+            今日も隣で笑うから<br>
+            怯えなくて良いんだよ<br>
+            そのままの君で良いんだよ<br>
+            増えた皺の数を隣で数えながら<br>
+            僕らの人生が<br>
+            三文小説だとしても<br>
+            投げ売る気は無いね<br>
+            何度でも書き直すよ<br>
+            誰もが愛任せ<br>
+            いつまでも彷徨う定め<br>
+            この小説(はなし)の果ての<br>
+            その先を書き足すよ<br>
+            真実と向き合うためには<br>
+            一人にならなきゃいけない時がある<br>
+            過ちだと分かっていても尚<br>
+            描き続けたい物語があるよ<br>
+            あゝ<br>
+            駄文ばかりの脚本と<br>
+            三文芝居にいつ迄も<br>
+            付き合っていたいのさ<br>
+            あゝ<br>
+            君の不器用な<br>
+            表情や言葉一つで<br>
+            救われる僕がいるから<br>
+            あの頃の輝きが<br>
+            息を潜めたとしても<br>
+            随分老けたねって<br>
+            明日も隣で笑うから<br>
+            悲しまないで良いんだよ<br>
+            そのままの君が良いんだよ<br>
+            過ぎゆく秒針を隣で数えながら<br>
+            止めどなく流るる泪雨が<br>
+            小説のように人生を何章にも<br>
+            区切ってくれるから<br>
+            愚かだと分かっていても尚<br>
+            足掻き続けなきゃいけない物語があるよ<br>
+            あゝ<br>
+            立ち尽くした<br>
+            あの日の頼りない背中を<br>
+            今なら強く押して見せるから<br>
+            あゝ<br>
+            僕のくだらない<br>
+            表情や言葉一つで<br>
+            微笑んだ君がいるから<br>
+            あゝ<br>
+            駄文ばかりの脚本と<br>
+            三文芝居にいつ迄も<br>
+            付き合っていたいのさ<br>
+            あゝ<br>
+            君の不器用な<br>
+            表情や言葉一つで<br>
+            救われる僕がいるから<br>
+            あゝ<br>
+            立ち尽くした<br>
+            あの日の頼りない背中を<br>
+            今なら強く押して見せるから<br>
+            あゝ<br>
+            僕のくだらない<br>
+            表情や言葉一つで<br>
+            微笑んだ君がいるから<br>
+            この世界の誰もが<br>
+            君を忘れ去っても<br>
+            随分老けたねって<br>
+            今日も隣で笑うから<br>
+            怯えなくて良いんだよ<br>
+            そのままの君で良いんだよ<br>
+            増えた皺の数を隣で数えながら</p>
+        <div class="btn-box2">
+            <input class="backbutton" type="button" value="back" style="width:100px ; height:50px" on
+                onclick="location.href='spognufy2.html'">
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="spognufy.js"></script>
+    <script>
+        $(function () {
+            $("#start_btn1").on("click", function () {
+                $("#sound1")[0].play();
+            });
+            $("#pause_btn1").on("click", function () {
+                $("#sound1")[0].pause();
+            });
+
+        });
+
+
+    </script>
+</body>
+
+</html>

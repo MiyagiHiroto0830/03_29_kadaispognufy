@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ceremony</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/responsive.css">
+</head>
+
+<body>
+    <audio id="sound5" preload="auto">
+        <source src="img/y2mate.com - King Gnu - 飛行艇.mp3" type="audio/wav">
+    </audio>
+    <div class="main">
+        <div class="img-box">
+            <img class="imgimg" src="img/ceremony.jpg" width="95%" height="auto">
+        </div>
+        <p class="text1">飛行艇</p>
+        <p class="text2">King Gnu</p>
+        <ul>
+            <li no="5" class="add" onclick="addfav('5')"><span>♡</span></li>
+            <li no="5" class="remove" onclick="removefav('5')"><span>♥</span></li>
+        </ul>
+        <div class="btn-logo-box">
+            <img id="start_btn5" src="img/start_btn.png" width="23%" height="auto">
+            <img id="pause_btn5" src="img/stop_btn.png" width="23%" height="auto">
+        </div>
+        <p class="llick">
+            どんな夢を見に行こうか<br>
+            正しさばかりに恐れ戦かないで<br>
+            自由自在に飛び回って<br>
+            ステップ・バイ・ステップ<br>
+            ビートを刻んで<br>
+            果ての無いパーティーを<br>
+            続けようか<br>
+            この時代に飛び乗って<br>
+            今夜この街を飛び立って<br>
+            大空を飛び回って<br>
+            命揺らせ命揺らせ<br>
+            この風に飛び乗って<br>
+            今夜台風の目となって<br>
+            大空を飛び回って<br>
+            命揺らせ命揺らせ<br>
+            代わり映えしない日常の片隅で<br>
+            無邪気に笑っていられたらいいよな<br>
+            無意味な旅を続けようか<br>
+            ワン・バイ・ワン<br>
+            一歩ずつでいいさ<br>
+            歓声も罵声も<br>
+            呑み込んで<br>
+            この時代に飛び乗って<br>
+            今夜愚かな杭となって<br>
+            過ちを恐れないで<br>
+            命揺らせ命揺らせ<br>
+            この風に飛び乗って<br>
+            今夜名も無き風となって<br>
+            清濁を併せ呑んで<br>
+            命揺らせ命揺らせ<br>
+            大雨降らせ
+            大地震わせ<br>
+            過去を祝え
+            明日を担え<br>
+            命揺らせ
+            命揺らせ<br>
+            この時代に飛び乗って<br>
+            今夜この街を飛び立って<br>
+            大空を飛び回って<br>
+            命揺らせ命揺らせ<br>
+            この風に飛び乗って<br>
+            今夜台風の目となって<br>
+            大空を飛び回って<br>
+            命揺らせ命揺らせ<br>
+            貴女の期待に飛び乗って<br>
+            今夜この羽根で飛びたくて<br>
+            この大空を飛びたくて<br>
+            命生まれ命生まれ<br>
+            この風に飛び乗って<br>
+            今夜名も無き風となって<br>
+            清濁を併せ呑んで<br>
+            命揺らせ命揺らせ
+        </p>
+        <div class="btn-box2">
+            <input class="backbutton" type="button" value="back" style="width:100px ; height:50px" on
+                onclick="location.href='spognufy2.html'">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="spognufy.js"></script>
+    <script>
+        $(function () {
+            $("#start_btn5").on("click", function () {
+                $("#sound5")[0].play();
+            });
+            $("#pause_btn5").on("click", function () {
+                $("#sound5")[0].pause();
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>

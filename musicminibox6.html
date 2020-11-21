@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TokyoRendeZ-vouz</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/responsive.css">
+</head>
+
+<body>
+    <audio id="sound6" preload="auto">
+        <source src="img/y2mate.com - King Gnu - Tokyo Rendez-Vous.mp3" type="audio/wav">
+    </audio>
+    <div class="main">
+        <div class="img-box">
+            <img class="imgimg" src="img/tokyorendez-vous.jpg" width="95%" height="auto">
+        </div>
+        <p class="text1">TokyoRendeZ-vouz</p>
+        <p class="text2">King Gnu</p>
+        <ul>
+            <li no="6" class="add" onclick="addfav('6')"><span>♡</span></li>
+            <li no="6" class="remove" onclick="removefav('6')"><span>♥</span></li>
+        </ul>
+        <div class="btn-logo-box">
+            <img id="start_btn6" src="img/start_btn.png" width="23%" height="auto">
+            <img id="pause_btn6" src="img/stop_btn.png" width="23%" height="auto">
+        </div>
+        <p class="llick">
+            走り出す山手に飛び乗って<br>
+            ぐるぐる回ってりゃ目は回る<br>
+            隣のあんた顔も知らねえ<br>
+            溢れかえる人で前も見えねえんだ<br>
+            トーキョー<br>
+            この身一つを投げ出して<br>
+            キザなセリフを投げ売って<br>
+            触れてみたいの<br>
+            見てみたいの<br>
+            トーキョー<br>
+            皆どこかを目指してひた走る<br>
+            この身守るためにゃツバを飲め<br>
+            ってな具合だよ<br>
+            そんな状況<br>
+            繰り返される日常の狭間で<br>
+            勝った、負けた、<br>
+            離れて、くっついた。<br>
+            すったもんだ<br>
+            ラチはあかねえな<br>
+            耳塞いで、目を瞑ったなら<br>
+            突っ走れよ、混沌的東京<br>
+            この身一つを投げす出して<br>
+            キザなセリフを投げ売って<br>
+            触れてみたいの<br>
+            見てみたいの<br>
+            夜に紛れて<br>
+            あなたの元へ遊びに行くよ<br>
+            眠れないこの街の<br>
+            無意味な空騒ぎにはうんざりさ<br>
+            トーキョー<br>
+            君とトーキョーランデブー<br>
+            満員電車に飛び乗って<br>
+            ぐるぐる回ってりゃ目は回る<br>
+            君とトーキョーランデブー<br>
+            皆どこかを目指してひた走る<br>
+            この身守るためにゃツバを飲め<br>
+            この身一つを投げ出して<br>
+            キザなセリフを投げ売って<br>
+            触れてみたいの見てみたいの<br>
+            あなた塗れで<br>
+            どこまででも飛んでいけそうさ<br>
+            彷徨う事で<br>
+            自分自身を失ってしまっても<br>
+            夜に紛れて<br>
+            あなたの元へ遊びに行くよ<br>
+            眠れないこの―街の<br>
+            無意味な空騒ぎにはうんざりさ<br>
+            トーキョー<br>
+        </p>
+        <div class="btn-box2">
+            <input class="backbutton" type="button" value="back" style="width:100px ; height:50px" on
+                onclick="location.href='spognufy2.html'">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="spognufy.js"></script>
+    <script>
+        $(function () {
+            $("#start_btn6").on("click", function () {
+                $("#sound6")[0].play();
+            });
+            $("#pause_btn6").on("click", function () {
+                $("#sound6")[0].pause();
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>

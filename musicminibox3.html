@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>hakujitu</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/responsive.css">
+</head>
+
+<body>
+    <audio id="sound3" preload="auto">
+        <source src="img/y2mate.com - King Gnu - 白日.mp3" type="audio/wav">
+    </audio>
+    <div class="main">
+        <div class="img-box">
+            <img class="imgimg" src="img/hakujitu.jpg" width="95%" height="auto">
+        </div>
+        <p class="text1">白日</p>
+        <p class="text2">King Gnu</p>
+        <ul>
+            <li no="3" class="add" onclick="addfav('3')"><span>♡</span></li>
+            <li no="3" class="remove" onclick="removefav('3')"><span>♥</span></li>
+        </ul>
+        <div class="btn-logo-box">
+            <img id="start_btn3" src="img/start_btn.png" width="23%" height="auto">
+            <img id="pause_btn3" src="img/stop_btn.png" width="23%" height="auto">
+        </div>
+        <p class="llick">
+            時には誰かを<br>
+            知らず知らずのうちに<br>
+            傷つけてしまったり<br>
+            失ったりして初めて<br>
+            犯した罪を知る<br>
+            戻れないよ、昔のようには<br>
+            煌めいて見えたとしても<br>
+            明日へと歩き出さなきゃ<br>
+            雪が降り頻ろうとも<br>
+            今の僕には<br>
+            何ができるの？<br>
+            何になれるの？<br>
+            誰かのために生きるなら<br>
+            正しいことばかり<br>
+            言ってらんないよな<br>
+            どこかの街で<br>
+            また出逢えたら<br>
+            僕の名前を<br>
+            覚えていますか？<br>
+            その頃にはきっと<br>
+            春風が吹くだろう<br>
+            真っ新に生まれ変わって<br>
+            人生一から始めようが<br>
+            へばりついて離れない<br>
+            地続きの今を歩いているんだ<br>
+            真っ白に全てさよなら<br>
+            降りしきる雪よ<br>
+            全てを包み込んでくれ<br>
+            今日だけは<br>
+            全てを隠してくれ<br>
+            もう戻れないよ、昔のようには<br>
+            羨んでしまったとしても<br>
+            明日へと歩き出さなきゃ<br>
+            雪が降り頻ろうとも<br>
+            いつものように笑ってたんだ<br>
+            分かり合えると思ってたんだ<br>
+            曖昧なサインを見落として<br>
+            途方のない間違い探し<br>
+            季節を越えて<br>
+            また出逢えたら<br>
+            君の名前を<br>
+            呼んでもいいかな<br>
+            その頃にはきっと<br>
+            春風が吹くだろう<br>
+            真っ新に生まれ変わって<br>
+            人生一から始めようが<br>
+            首の皮一枚繋がった<br>
+            如何しようも無い今を<br>
+            生きていくんだ<br>
+            真っ白に全てさよなら<br>
+            降りしきる雪よ<br>
+            今だけはこの心を凍らせてくれ<br>
+            全てを忘れさせてくれよ<br>
+            朝目覚めたら<br>
+            どっかの誰かに<br>
+            なってやしないかな<br>
+            なれやしないよな<br>
+            聞き流してくれ<br>
+            忙しない日常の中で
+            歳だけを重ねた<br>
+            その向こう側に<br>
+            待ち受けるのは<br>
+            天国か地獄か<br>
+            いつだって人は鈍感だもの<br>
+            わかりゃしないんだ肚の中<br>
+            それでも愛し愛され<br>
+            生きて行くのが定めと知って<br>
+            後悔ばかりの人生だ<br>
+            取り返しのつかない過ちの<br>
+            一つや二つくらい<br>
+            誰にでもあるよな<br>
+            そんなんもんだろう<br>
+            うんざりするよ<br>
+            真っ新に生まれ変わって<br>
+            人生一から始めようが<br>
+            へばりついて離れない<br>
+            地続きの今を歩いて行くんだ<br>
+            真っ白に全てさようなら<br>
+            降りしきる雪よ<br>
+            全てを包み込んでくれ<br>
+            今日だけは<br>
+            全てを隠してくれ</p>
+        <div class="btn-box2">
+            <input class="backbutton" type="button" value="back" style="width:100px ; height:50px" on
+                onclick="location.href='spognufy2.html'">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="spognufy.js"></script>
+
+    <script>
+        $(function () {
+            $("#start_btn3").on("click", function () {
+                $("#sound3")[0].play();
+            });
+            $("#pause_btn3").on("click", function () {
+                $("#sound3")[0].pause();
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>

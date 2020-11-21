@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>teenager</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/responsive.css">
+</head>
+
+<body>
+    <audio id="sound4" preload="auto">
+        <source src="img/y2mate.com - King Gnu - Teenager Forever.mp3" type="audio/wav">
+    </audio>
+    <div class="main">
+        <div class="img-box t-box">
+            <img class="imgimg" src="img/teenagerforever.png" width="532px" height="532px">
+        </div>
+        <p class="text1">TEENAGER FOREVER</p>
+        <p class="text2">King Gnu</p>
+        <ul>
+            <li no="4" class="add" onclick="addfav('4')"><span>♡</span></li>
+            <li no="4" class="remove" onclick="removefav('4')"><span>♥</span></li>
+        </ul>
+        <div class="btn-logo-box">
+            <img id="start_btn4" src="img/start_btn.png" width="23%" height="auto">
+            <img id="pause_btn4" src="img/stop_btn.png" width="23%" height="auto">
+        </div>
+        <p class="llick">他の誰かになんて
+            なれやしないよ<br>
+            そんなのわかってるんだ<br>
+            明日を信じてみたいの<br>
+            微かな自分を<br>
+            愛せなかったとしても<br>
+            Teenager Forever<br>
+            望んだこと全てが<br>
+            叶う訳はないよ<br>
+            そんなのわかってるんだ<br>
+            深い傷もいずれは<br>
+            瘡蓋に変わって<br>
+            剥がれ落ちるだろうか<br>
+            いつまでも<br>
+            相変わらず<br>
+            つまらない話を<br>
+            つまらない中に<br>
+            どこまでも<br>
+            幸せを探すよ<br>
+            伝えたい想いは溢れているのに<br>
+            伝え方がわからなくて<br>
+            今でも言葉を探しているんだ<br>
+            遠く散っていった<br>
+            夢の欠片に<br>
+            めくるめく貴方の煌めきに<br>
+            気づけたらいいんだ<br>
+            Teenager Forever<br>
+            結局のところ<br>
+            誰も教えちゃくれないんだ<br>
+            進むべき道なんて<br>
+            等身大のままで<br>
+            生きていこうぜ<br>
+            歳を重ねても<br>
+            いつまでも<br>
+            相変わらず<br>
+            つまらない話を<br>
+            つまらない中に<br>
+            どこまでも<br>
+            幸せを探すよ<br>
+            煌めきを探せよ<br>
+            散々振り回して、振り回されて<br>
+            大事なのはあなただってことに<br>
+            気づけないままで<br>
+            一体未来は<br>
+            どうなるのかなんて事より<br>
+            めくるめく今という煌めきに<br>
+            気づけたらいいんだ<br>
+            Teenager Forever<br>
+            他の誰かになんて<br>
+            なれやしないよ<br>
+            そんなのわかってるんだ<br>
+            明日を信じてみたいの<br>
+            微かな自分を<br>
+            愛せなかったとしても</p>
+        <div class="btn-box2">
+            <input class="backbutton" type="button" value="back" style="width:100px ; height:50px" on
+                onclick="location.href='spognufy2.html'">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="spognufy.js"></script>
+    <script>
+        $(function () {
+            $("#start_btn4").on("click", function () {
+                $("#sound4")[0].play();
+            });
+            $("#pause_btn4").on("click", function () {
+                $("#sound4")[0].pause();
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>

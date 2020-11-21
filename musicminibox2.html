@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>kasa</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/responsive.css">
+</head>
+
+<body>
+    <audio id="sound2" preload="auto">
+        <source src="img/y2mate.com - King Gnu - 傘  OFFICIAL AUDIO.mp3" type="audio/wav">
+    </audio>
+    <div class="main">
+        <div class="img-box">
+            <img class="imgimg" src="img/kasa.jpg" width="95%" height="auto">
+        </div>
+        <p class="text1">傘</p>
+        <p class="text2">King Gnu</p>
+        <ul>
+            <li no="2" class="add" onclick="addfav('2')"><span>♡</span></li>
+            <li no="2" class="remove" onclick="removefav('2')"><span>♥</span></li>
+        </ul>
+
+        <div class="btn-logo-box">
+            <img id="start_btn2" src="img/start_btn.png" width="23%" height="auto">
+            <img id="pause_btn2" src="img/stop_btn.png" width="23%" height="auto">
+        </div>
+        <p class="llick">
+            さよなら<br>
+            ハイになったふりしたって<br>
+            心模様は土砂降りだよ<br>
+            傘も持たずにどこへ行くの？<br>
+            あれこれ<br>
+            不安になったって<br>
+            どうしようもない<br>
+            “運命でしょ？”<br>
+            曇りガラス越しのあなたには<br>
+            もう何も届いちゃいない<br>
+            3回目のアラームで<br>
+            ようやく起き上がれそうな朝<br>
+            眠い目を擦りながら<br>
+            顔を洗ってコーヒーを流し込め<br>
+            運命なんてハナから<br>
+            信じきれやしないよな<br>
+            深読みのし過ぎばかりじゃ<br>
+            満たされやしなくて<br>
+            もっと話したいんだ<br>
+            もっと近づきたいんだ<br>
+            遠くで眺めていたく無いよな<br>
+            どんな時だって<br>
+            さよなら<br>
+            ハイになったふりしたって<br>
+            心模様は土砂降りだよ<br>
+            傘も持たずにどこへ行くの？<br>
+            あれこれ<br>
+            不安になったって<br>
+            どうしようもない<br>
+            “運命でしょ？”<br>
+            曇りガラス越しのあなたには<br>
+            もう何も届いちゃいない<br>
+            ガラス片を避けながら<br>
+            直行直帰寝落ちる毎日さ<br>
+            満員電車に息を潜め<br>
+            鳴り響いたベルが発車の合図さ<br>
+            繋いだ手確かめた<br>
+            確かに僕ら此処に居たのさ<br>
+            寄せては返す波の中を<br>
+            必死に立っていたんだ<br>
+            ゴールなんか有りはしないよな<br>
+            ただのレースとは違うよな<br>
+            巷に流れるラヴ・ソングの<br>
+            様にはいかないね<br>
+            さよなら<br>
+            ハイになったふりしたって<br>
+            心模様は土砂降りだよ<br>
+            傘も持たずにどこへ行くの？<br>
+            あれこれ<br>
+            不安になったって<br>
+            どうしようもない<br>
+            “運命でしょ？”<br>
+            曇りガラス越しのあなたには<br>
+            もう何も届いちゃいないんだ<br>
+            結局は愛がどうとか<br>
+            わからないよ未だに<br>
+            そう言い放った自分の<br>
+            頼りない背中を見た<br>
+            さよなら<br>
+            ハイになったふりしたって<br>
+            心模様は土砂降りだよ<br>
+            傘も持たずにどこへ行くの？<br>
+            あれこれ<br>
+            不安になったって<br>
+            どうしようもない<br>
+            “運命でしょ？”<br>
+            曇りガラス越しのあなたには<br>
+            もう何も届いちゃいないんだ<br>
+        </p>
+        <div class="btn-box2">
+            <input class="backbutton" type="button" value="back" style="width:100px ; height:50px" on
+                onclick="location.href='spognufy2.html'">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="spognufy.js"></script>
+    <script>
+        $(function () {
+            $("#start_btn2").on("click", function () {
+                $("#sound2")[0].play();
+            });
+            $("#pause_btn2").on("click", function () {
+                $("#sound2")[0].pause();
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+@media(max-width:670px){
+    body{
+        width: 100%;
+    }
+    .text-logo{
+        width: 90%;
+        height: auto;
+    }
+    .img-logo{
+         width: 50%;
+        height: auto;
+    }
+    .music-box1{
+        display: block;
+        width: 100%;
+        text-align: center;
+        
+    }
+    .music-box1 img{
+        width: 85%;
+        height: auto;
+        object-fit: cover;
+        margin-top: 40px;
+    }
+    .music-box2{
+        display: block;
+        width: 100%;
+    }
+    .music-box2 img{
+        width: 85%;
+        height: auto;
+        object-fit: cover;
+        margin-top: 40px;
+        position: center;
+    }
+    .music-minibox1{
+        
+       display: block;
+       text-align: center;
+    }
+    .music-minibox2{
+        display: block;
+       text-align: center;
+    }
+    .music-minibox3{
+        display: block;
+       text-align: center;
+    }
+    .music-minibox4{
+        display: block;
+       text-align: center;
+    }
+    .music-minibox5{
+        display: block;
+       text-align: center;
+    }
+    .music-minibox6{
+        display: block;
+       text-align: center;
+    }
+    .playbutton{
+       margin: 0;
+    }
+    .main{
+        width: 100%;
+        margin: 0;
+    }
+    .t-box img{
+        width: 100%;
+        height: auto;
+    }
+
+
+
+
+
+
+
+
+}
