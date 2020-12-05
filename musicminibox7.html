@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>千両役者</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/responsive.css">
+</head>
+
+<body>
+    <audio id="sound7" preload="auto">
+        <source src="img/King Gnu - 千両役者.mp3" type="audio/wav">
+    </audio>
+    <div class="main">
+        <div class="img-box">
+            <img class="imgimg" src="img/sanmonsyousetu.jpg" width="95%" height="auto">
+        </div>
+        <p class="text1">千両役者</p>
+        <p class="text2">King Gnu</p>
+        <ul>
+            <li no="7" class="add" onclick="addfav('7')"><span>♡</span></li>
+            <li no="7" class="remove" onclick="removefav('7')"><span>♥</span></li>
+        </ul>
+        <div id="seekbar"></div>
+        <div id="time">
+            <span id="current">00:00</span>
+            <span id="duration">00:00</span>
+        </div>
+        <div class="btn-logo-box">
+            <img id="backbtn7" src="img/backicon.png" width="60px" height="60px">
+            <img id="start_btn7" src="img/start_btn.png" width="32%" height="auto">
+            <img id="pause_btn7" src="img/stop_btn.png" width="32%" height="auto">
+            <img id="nextbtn7" src="img/nexticon.png" width="60px" height="60px">
+        </div>
+        <div class="repeat">
+            <img id="repeat" src="img/repeaticon.png" width="10%" height="10%">
+        </div>
+        <p class="llick">
+            出鱈目な劇を繰り返して<br>
+            筋書きは何時も無理矢理で<br>
+            命を継ぎ接ぎ<br>
+            迷路の先は何時も振り出し<br>
+            吊り橋を渡れ剥き出しで<br>
+            のらりくらり千鳥足で<br>
+            命の駆け引き<br>
+            くたばりゃ最後<br>
+            死人にゃ口無し<br>
+            食った食われたの茶番劇<br>
+            一夜限り仮初めの繁栄<br>
+            命の安売り<br>
+            緞帳閉じ当代を御仕舞い<br>
+            泥仕合の果てに喜劇あり<br>
+            カタストロフィ超えてけ業<br>
+            今宵の千両役者<br>
+            狂気の如し歌舞いて頂戴<br>
+            薪尽きて火の滅する時<br>
+            駆け巡った走馬灯の<br>
+            其の眺めは値千金か万金か<br>
+            此の目には絶景かな<br>
+            一世一代の大舞台<br>
+            有名無名も関係ない<br>
+            爽快だけを頂戴<br>
+            あなたと相思相愛で居たい<br>
+            好き勝手放題の商売<br>
+            後悔なんて面倒臭いや<br>
+            青臭い野暮臭い生涯を<br>
+            ただ生きるための<br>
+            抗体を頂戴<br>
+            合いの手の如し口を出し<br>
+            立場悪くなりゃ「お先に」<br>
+            無意識に串刺し<br>
+            ど阿呆には自覚は無し<br>
+            何様者だ<br>
+            其様もんだ<br>
+            DA DA DA<br>
+            ママのおマンマで<br>
+            お腹パンパンだ<br>
+            パッパラパーな頭ん中<br>
+            馬鹿な儘だ<br>
+            無意味から眺める意味を<br>
+            死から眺めた生の躍動<br>
+            その様まるで<br>
+            御祭り土砂降り<br>
+            此の目には絶景かな<br>
+            一世一代の大舞台<br>
+            有名無名も関係ない<br>
+            爽快だけを頂戴<br>
+            あなたと相思相愛で居たい<br>
+            好き勝手放題の商売<br>
+            勝敗なんて興味は無いや<br>
+            青臭い野暮臭い生涯を<br>
+            DA DA DA DA DA<br>
+            ただ生きるための<br>
+            抗体を頂戴<br>
+            出鱈目な劇を繰り返して<br>
+            筋書きは何時も無理矢理で<br>
+            命を継ぎ接ぎ<br>
+            迷路の先は何時も振り出し<br>
+            吊り橋を渡れ剥き出しで<br>
+            のらりくらり千鳥足で<br>
+            命の駆け引き<br>
+            くたばりゃ最後<br>
+            死人にゃ口無し<br>
+            食った食われたの茶番劇<br>
+            一夜限り仮初めの繁栄<br>
+            命の安売り<br>
+            緞帳閉じ当代を御仕舞い<br>
+            泥仕合の果てに喜劇あり<br>
+            カタストロフィ超えてけ業<br>
+            今宵の千両役者<br>
+            狂気の如し歌舞いて頂戴<br>
+        </p>
+        <div class="btn-box2">
+            <input class="backbutton" type="button" value="back" style="width:100px ; height:50px" on
+                onclick="location.href='spognufy2.html'">
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/3.5.2/firebase-ui-auth__ja.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/firebase.js"></script>
+    <script type="text/javascript" src="js/spognufy.js"></script>
+
+    <script>
+        $(function () {
+            $("#start_btn7").on("click", function () {
+                $("#sound7")[0].play();
+            });
+            $("#pause_btn7").on("click", function () {
+                $("#sound7")[0].pause();
+            });
+            $("#nextbtn7").on("click", function () {
+                location.href = "musicminibox1.html"
+            });
+            $("#backbtn7").on("click", function () {
+                location.href = "musicminibox6.html"
+            });
+            $("#sound7").on("ended", function () {
+                location.href = "musicminibox1.html"
+            });
+            let count = 1;
+            $("#repeat").on("click", function () {
+                if (count % 2 !== 0) {
+                    $("#sound7")[0].loop = true;
+                    alert("repert機能をonにしました")
+                } else {
+                    $("#sound7")[0].loop = false;
+                    alert("repert機能をoffにしました")
+                }
+                count++;
+
+            });
+        });
+        const audio = $("#sound7")[0];
+        audio.addEventListener("timeupdate", (e) => {
+            const current = Math.floor(audio.currentTime)
+            const duration = Math.round(audio.duration)
+            if (!isNaN(duration)) {
+                document.getElementById('current').innerHTML = current
+                document.getElementById('duration').innerHTML = duration
+                const percent = Math.round((audio.currentTime / audio.duration) * 1000) / 10
+                document.getElementById('seekbar').style.backgroundSize = percent + '%'
+            }
+        })
+        document.getElementById('seekbar').addEventListener("click", (e) => {
+            const duration = Math.round(audio.duration)
+            if (!isNaN(duration)) {
+                const mouse = e.pageX
+                const element = document.getElementById('seekbar')
+                const rect = element.getBoundingClientRect()
+                const position = rect.left + window.pageXOffset
+                const offset = mouse - position
+                const width = rect.right - rect.left
+                audio.currentTime = Math.round(duration * (offset / width))
+            }
+        })
+        function playTime(t) {
+            let hms = ''
+            const h = t / 3600 | 0
+            const m = t % 3600 / 60 | 0
+            const s = t % 60
+            const z2 = (v) => {
+                const s = '00' + v
+                return s.substr(s.length - 2, 2)
+            }
+            if (h != 0) {
+                hms = h + ':' + z2(m) + ':' + z2(s)
+            } else if (m != 0) {
+                hms = z2(m) + ':' + z2(s)
+            } else {
+                hms = '00:' + z2(s)
+            }
+            return hms
+        }
+
+        audio.addEventListener("timeupdate", (e) => {
+            const current = Math.floor(audio.currentTime)
+            const duration = Math.round(audio.duration)
+            if (!isNaN(duration)) {
+                document.getElementById('current').innerHTML = playTime(current)
+                document.getElementById('duration').innerHTML = playTime(duration)
+            }
+        })
+
+    </script>
+</body>
+
+</html>

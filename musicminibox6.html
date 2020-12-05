@@ -24,9 +24,19 @@
             <li no="6" class="add" onclick="addfav('6')"><span>♡</span></li>
             <li no="6" class="remove" onclick="removefav('6')"><span>♥</span></li>
         </ul>
+        <div id="seekbar"></div>
+        <div id="time">
+            <span id="current">00:00</span>
+            <span id="duration">00:00</span>
+        </div>
         <div class="btn-logo-box">
-            <img id="start_btn6" src="img/start_btn.png" width="23%" height="auto">
-            <img id="pause_btn6" src="img/stop_btn.png" width="23%" height="auto">
+            <img id="backbtn6" src="img/backicon.png" width="60px" height="60px">
+            <img id="start_btn6" src="img/start_btn.png" width="32%" height="auto">
+            <img id="pause_btn6" src="img/stop_btn.png" width="32%" height="auto">
+            <img id="nextbtn6" src="img/nexticon.png" width="60px" height="60px">
+        </div>
+        <div class="repeat">
+            <img id="repeat" src="img/repeaticon.png" width="10%" height="10%">
         </div>
         <p class="llick">
             走り出す山手に飛び乗って<br>
@@ -83,8 +93,13 @@
                 onclick="location.href='spognufy2.html'">
         </div>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/3.5.2/firebase-ui-auth__ja.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="spognufy.js"></script>
+    <script src="js/firebase.js"></script>
+    <script type="text/javascript" src="js/spognufy.js"></script>
+
     <script>
         $(function () {
             $("#start_btn6").on("click", function () {
@@ -93,8 +108,78 @@
             $("#pause_btn6").on("click", function () {
                 $("#sound6")[0].pause();
             });
+            $("#nextbtn6").on("click", function () {
+                location.href = "musicminibox1.html"
+            });
+            $("#backbtn6").on("click", function () {
+                location.href = "musicminibox5.html"
+            });
+            $("#sound6").on("ended", function () {
+                location.href = "musicminibox7.html"
+            });
+            let count = 1;
+            $("#repeat").on("click", function () {
+                if (count % 2 !== 0) {
+                    $("#sound6")[0].loop = true;
+                    alert("repert機能をonにしました")
+                } else {
+                    $("#sound6")[0].loop = false;
+                    alert("repert機能をoffにしました")
+                }
+                count++;
 
+            });
         });
+        const audio = $("#sound6")[0];
+        audio.addEventListener("timeupdate", (e) => {
+            const current = Math.floor(audio.currentTime)
+            const duration = Math.round(audio.duration)
+            if (!isNaN(duration)) {
+                document.getElementById('current').innerHTML = current
+                document.getElementById('duration').innerHTML = duration
+                const percent = Math.round((audio.currentTime / audio.duration) * 1000) / 10
+                document.getElementById('seekbar').style.backgroundSize = percent + '%'
+            }
+        })
+        document.getElementById('seekbar').addEventListener("click", (e) => {
+            const duration = Math.round(audio.duration)
+            if (!isNaN(duration)) {
+                const mouse = e.pageX
+                const element = document.getElementById('seekbar')
+                const rect = element.getBoundingClientRect()
+                const position = rect.left + window.pageXOffset
+                const offset = mouse - position
+                const width = rect.right - rect.left
+                audio.currentTime = Math.round(duration * (offset / width))
+            }
+        })
+        function playTime(t) {
+            let hms = ''
+            const h = t / 3600 | 0
+            const m = t % 3600 / 60 | 0
+            const s = t % 60
+            const z2 = (v) => {
+                const s = '00' + v
+                return s.substr(s.length - 2, 2)
+            }
+            if (h != 0) {
+                hms = h + ':' + z2(m) + ':' + z2(s)
+            } else if (m != 0) {
+                hms = z2(m) + ':' + z2(s)
+            } else {
+                hms = '00:' + z2(s)
+            }
+            return hms
+        }
+
+        audio.addEventListener("timeupdate", (e) => {
+            const current = Math.floor(audio.currentTime)
+            const duration = Math.round(audio.duration)
+            if (!isNaN(duration)) {
+                document.getElementById('current').innerHTML = playTime(current)
+                document.getElementById('duration').innerHTML = playTime(duration)
+            }
+        })
 
     </script>
 </body>

@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <h1 class="loginname"></h1>
     <div class="music-box1">
         <div class="music-minibox1">
             <img src="img/sanmonsyousetu.jpg" width="250px" height="250px">
@@ -19,7 +20,7 @@
                 <li no="1" class="add" onclick="addfav('1')"><span>♡</span></li>
                 <li no="1" class="remove" onclick="removefav('1')"><span>♥</span></li>
             </ul>
-            <input class="playbutton" type="button" value="play" style="width:100px ; height:50px"
+            <input id="btn1" class="playbutton" type="button" value="play" style="width:100px ; height:50px"
                 onclick="location.href='musicminibox1.html'">
 
         </div>
@@ -72,9 +73,81 @@
                 onclick="location.href='musicminibox6.html'">
         </div>
     </div>
+    <h1>最近再生されたコンテンツ</h1>
+    <div class="contents">
+        <div>
+            <img id="img" width="250px" height="250px" src="">
+            <p class="name1">名前</p>
+            <p class="music1">曲</p>
+            <p class="time1">時間</p>
+        </div>
+        <div>
+            <img id="img2" width="250px" height="250px" src="">
+            <p class="name2">名前</p>
+            <p class="music2">曲</p>
+            <p class="time2">時間</p>
+        </div>
+        <div>
+            <img id="img3" width="250px" height="250px" src="">
+            <p class="name3">名前</p>
+            <p class="music3">曲</p>
+            <p class="time3">時間</p>
+        </div>
+    </div>
+    <h1>視聴回数ランキングBEST3</h1>
+    <div class="contents">
+        <div>
+            <img id="img" width="250px" height="250px" src="">
+            <p class="music1">曲</p>
+            <p class="count1">視聴回数</p>
+        </div>
+        <div>
+            <img id="img2" width="250px" height="250px" src="">
+            <p class="music2">曲</p>
+            <p class="count2">視聴回数</p>
+        </div>
+        <div>
+            <img id="img3" width="250px" height="250px" src="">
+            <p class="music3">曲</p>
+            <p class="count3">視聴回数</p>
+        </div>
+    </div>
+    <h1>最新曲「千両役者」追加しました</h1>
+    <div class="newbox">
+        <img src="img/sanmonsyousetu.jpg" width="250px" height="250px">
+        <ul>
+            <li no="7" class="add" onclick="addfav('7')"><span>♡</span></li>
+            <li no="7" class="remove" onclick="removefav('7')"><span>♥</span></li>
+        </ul>
+        <input class="" type="button" value="play" style="width:100px ; height:50px"
+            onclick="location.href='musicminibox7.html'">
+    </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="spognufy.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/3.5.2/firebase-ui-auth__ja.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/firebase.js"></script>
+    <script type="text/javascript" src="js/spognufy.js"></script>
+
+    <script>
+
+        $(function () {
+
+            firebase.auth().onAuthStateChanged((user) => {
+                if (user) {
+                    alert(`${user.displayName}さんがログインしました`);
+                    let i = `${user.displayName}`;
+                    localStorage.setItem("local_name", i);
+                    $(".loginname").html(`ようこそ${user.displayName}さん`);
+                }
+
+
+            });
+
+        });
+    </script>
+
 </body>
 
 </html>
